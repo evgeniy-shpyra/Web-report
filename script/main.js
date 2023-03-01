@@ -22,7 +22,7 @@ $(document).ready(() => {
             $.get(
                 `http://127.0.0.1:5500/information/${currentPage}/${nameOfFile}.txt`,
                 function (data) {
-                    $("#information").text(data)
+                    $("#information").html(data)
                 },
                 "text"
             )

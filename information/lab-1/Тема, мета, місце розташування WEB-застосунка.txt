@@ -1,1 +1,4 @@
-Тема, мета, місце розташування WEB-застосунка
+<p><span class="text-bold">Тема</span> - Словник</p>
+<p><span class="text-bold">Мета</span> - створити веб застосунок "Словник" за допомогою якого користувачі зможуть вивчати англійські слова</p>
+<p><span class="text-bold">Місце розташування веб застосунка</span> <a href="#">GitHub</a></p>
+<p><span class="text-bold">Місце розташування звітного документа <a href="https://github.com/evgeniy-shpyra/Web-report">GitHub</a></p>
