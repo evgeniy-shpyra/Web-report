@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    
     const activeMainLink = {
         id: "",
     }
@@ -47,5 +48,14 @@ $(document).ready(() => {
     })
     $("#main-link-6").click(function () {
         toggleActiveMainLink("#main-link-6")
+    })
+    $("#main-link-7").click(function () {
+        toggleActiveMainLink("#main-link-7")
+    })
+    $("#main-link-8").click(function () {
+        toggleActiveMainLink("#main-link-8")
+    })
+    $("#main-link-9").click(function () {
+        toggleActiveMainLink("#main-link-9")
     })
 })
