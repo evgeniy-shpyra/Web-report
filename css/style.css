@@ -149,6 +149,36 @@ select {
   border-radius: 40px 40px 0 0;
   padding: 30px 30px 30px 30px;
 }
+.developers {
+  width: 100%;
+}
+.developers__title {
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 30px;
+}
+.developers__items {
+  display: flex;
+  justify-content: center;
+}
+.developers__developer {
+  padding: 0 50px 50px 50px;
+}
+.developers__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.37);
+  height: 600px;
+  width: 450px;
+}
+.developers__text {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-size: 25px;
+}
 
 .links__button {
   cursor: pointer;
