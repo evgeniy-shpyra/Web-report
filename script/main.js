@@ -9,6 +9,8 @@ $(document).ready(() => {
         if (activeMainLink.id == currentId) return
 
         const currentPathArray = window.location.href.split("/")
+        const currentUrl = `http://${currentPathArray.slice(2, 3)[0]}` 
+      
         const currentPage = currentPathArray[currentPathArray.length - 1].slice(
             0,
             -5
@@ -18,10 +20,10 @@ $(document).ready(() => {
         $(activeMainLink.id).removeClass("button_active")
         $(currentId).addClass("button_active")
         activeMainLink.id = currentId
-        console.log(nameOfFile)
+
         if (nameOfFile)
             $.get(
-                `http://127.0.0.1:5500/information/${currentPage}/${nameOfFile}.txt`,
+                `${currentUrl}/information/${currentPage}/${nameOfFile}.txt`,
                 function (data) {
                     $("#information").html(data)
                 },
