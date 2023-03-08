@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <title>Dictionary</title>
+    </head>
+    <body class="wrapper">
+        <header class="header">
+            <div class="header__container">
+
+                <h1 class="header__title title title_h1">
+                    Звіти з лабораторних робіт
+                </h1>
+                <h2 class="header__title title title_h2">
+                    З дисципліни "Web-орієнтовані технології.Основи Frontend та
+                    Backend розробок"
+                </h2>
+                <p class="header__text text">
+                    Бригада №21. Студенти гр.ІК-01 Боднар Антон, Шпира Євген,
+                    Шепель Нікіта
+                </p>
+            </div>
+        </header>
+        <nav class="navigation">
+            <div class="navigation__container">
+                <ul class="navigation__items">
+                    <li class="navigation__item">
+                        <button
+                            id="nav-link-1"
+                            class="navigation__button button button_active"
+                        >
+                            <a class="navigation__link" href="/"
+                                >Виконавці</a
+                            >
+                        </button>
+                    </li>
+                    <li class="navigation__item">
+                        <button
+                            id="nav-link-1"
+                            class="navigation__button button"
+                        >
+                            <a class="navigation__link" href="page/lab-1.html"
+                                >Lab 1</a
+                            >
+                        </button>
+                    </li>
+                    <li class="navigation__item">
+                        <button
+                            id="nav-link-2"
+                            class="navigation__button button"
+                        >
+                            <a class="navigation__link" href="page/lab-2.html"
+                                >Lab 2</a
+                            >
+                        </button>
+                    </li>
+    
+            </div>
+        </nav>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__developers developers">
+                    <h3 class="developers__title">
+                        Виконавці
+                    </h3>
+                    <div class="developers__items">
+                        <div class="developers__developer">
+                            <img class="developers__image" src="./images/people/Evgeniy.jpg" />
+                            <p class="developers__text text">Шпира Євген</p>
+                        </div>
+                        <div class="developers__developer">
+                            <img class="developers__image" src="./images/people/Nickta.jpg" />
+                            <p class="developers__text text">Шепель Нікіта</p>
+                        </div>
+                        <div class="developers__developer">
+                            <img class="developers__image" src="./images/people/Anton.jpg" />
+                            <p class="developers__text text">Боднар Антон</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+</html>
