@@ -18,7 +18,7 @@ $(document).ready(() => {
         $(activeMainLink.id).removeClass("button_active")
         $(currentId).addClass("button_active")
         activeMainLink.id = currentId
-      console.log(`${currentUrl}/dist/components/${currentPage}/${nameOfFile}.html`)
+        //   console.log(`${currentUrl}/dist/components/${currentPage}/${nameOfFile}.html`)
         if (nameOfFile)
             $.get(
                 `${currentUrl}/dist/components/${currentPage}/${nameOfFile}.html`,
@@ -32,9 +32,21 @@ $(document).ready(() => {
     const togglePopup = (currentId) => {
         const elementsNear = $(currentId).siblings(".popup__items")
         if (elementsNear.length) {
-            $(elementsNear[0]).hasClass("popup__items_hidden")
-                ? $(elementsNear[0]).removeClass("popup__items_hidden")
-                : $(elementsNear[0]).addClass("popup__items_hidden")
+            const allChildren = $(elementsNear[0]).find("li")
+
+            // console.log(allChildren)
+            let height = 0
+
+            allChildren.each(function () {
+                const liHeight = $(this).height()
+                height += liHeight + 20
+            })
+
+            if ($(elementsNear[0]).height() == 0) {
+                $(elementsNear[0]).css("height", `${height}px`)
+            } else {
+                $(elementsNear[0]).css("height", `0px`)
+            }
             return true
         } else return false
     }
@@ -47,5 +59,4 @@ $(document).ready(() => {
                 toggleActiveMainLink(`#main-link-${i}`)
         })
     }
-
 })
