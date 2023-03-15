@@ -1,1 +1,159 @@
-LAB - 2
+<p style="font-size: 24px;"><span class="text-bold">Шрифти</span></p>
+<h1 style="font-size: 36px;font-family: Arial, sans-serif;font-weight: bold;color: #3b82f6;">Hello</h1>
+<p style="font-size: 18px; text-decoration: underline;">З використанням css</p>
+&lt;h1&gt; {
+    <p>font-size: 36px;</p>
+    <p>font-family: Arial, sans-serif;</p>
+    <p>font-weight: bold;</p>
+    <p>color: #3b82f6;</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 18px; text-decoration: underline;">З використанням tailwind(використовуємо в web-застосунку)</p>
+&lt;h1&gt; {
+    <p>text-[36px]</p>
+    <p>font-bold</p>
+    <p>text-[#3b82f6]</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 24px;"><span class="text-bold">Контури</span></p>
+<h1 style="border: 1px solid black; display: inline-block;">Hello</h1>
+<p style="font-size: 18px; text-decoration: underline;">З використанням css</p>
+&lt;h1&gt; {
+    <p> border: 1px solid black;</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 18px; text-decoration: underline;">З використанням tailwind(використовуємо в web-застосунку)</p>
+&lt;h1&gt; {
+    <p> border-style: solid;</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 24px;"><span class="text-bold">Фон</span></p>
+<h1 style="background-color: #ff0000;display: inline-block;">Hello</h1>
+<p style="font-size: 18px; text-decoration: underline;">З використанням css</p>
+&lt;h1&gt; {
+    <p> background-color: #ff0000;</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 18px; text-decoration: underline;">З використанням tailwind(використовуємо в web-застосунку)</p>
+&lt;h1&gt; {
+    <p> class="bg-red-500"</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 24px;"><span class="text-bold">Колір тексту</span></p>
+<h1 style="color: #ff0000;">Hello</h1>
+<p style="font-size: 18px; text-decoration: underline;">З використанням css</p>
+&lt;h1&gt; {
+    <p> color: #ff0000;</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 18px; text-decoration: underline;">З використанням tailwind(використовуємо в web-застосунку)</p>
+&lt;h1&gt; {
+    <p> class="text-red-500"</p>
+}
+&lt;/h1&gt;
+<p style="font-size: 24px;"><span class="text-bold">CSS-властивості для таблиць, багаторівневих списків</span></p>
+<table style="border: 1px solid;">
+    <colgroup>
+      <col span="3" style="background:#0D6CBD">
+      <col style="background-color:#0D6CBD">
+        
+    </colgroup>
+    <tr>
+      <th style="text-align: left;padding: 8px;border: 1px solid #ddd;">Номер</th>
+      <th style="text-align: left;padding: 8px;border: 1px solid #ddd;">Слово</th>
+      <th style="text-align: left;padding: 8px;border: 1px solid #ddd;">Переклад</th>
+      <th style="text-align: left;padding: 8px;border: 1px solid #ddd;">Статус</th>
+    </tr>
+    <tr>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">1</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">embarrassment</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Збентеження</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Вивчено</td>
+    </tr>
+    <tr>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">2</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">fascinating</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Захоплюючий</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Не вивчено</td>
+    </tr>
+           <tr>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">3</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">garbage</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Сміття</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Вивчено</td>
+    </tr>
+           <tr>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">4</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">stunned</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Приголомшений</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Не вивчено</td>
+    </tr>
+           <tr>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">5</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">raw</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Сирий</td>
+      <td style="text-align: left;padding: 8px;border: 1px solid #ddd;">Не вивчено</td>
+    </tr>
+  </table>
+  <p style="font-size: 18px; text-decoration: underline;">З використанням css</p>
+&lt;table&gt; {
+    <p> border: 1px solid;</p>
+}
+&lt;/table&gt;
+<p>th, td {</p>
+    <p>text-align: left;</p>
+    <p>padding: 8px;</p>
+    <p>border: 1px solid #ddd;</p>
+  }
+  <p style="font-size: 18px; text-decoration: underline;">З використанням tailwind(використовуємо в web-застосунку)</p>
+&lt;table class="border"&gt;</br>
+&lt;thead&gt;</br>
+&lt;tr&gt;</br>
+&lt;th class="text-left py-2 px-4 border">Header 1&lt;/th&gt;</br>
+&lt;th class="text-left py-2 px-4 border">Header 2&lt;/th&gt;</br>
+&lt;/tr&gt;</br>
+&lt;/thead&gt;</br>
+&lt;body&gt;</br>
+&lt;tr&gt;</br>
+&lt;td class="text-left py-2 px-4 border">Row 1, Cell 1&lt;/td&gt;</br>
+&lt;td class="text-left py-2 px-4 border">Row 1, Cell 2&lt;/td&gt;</br>
+&lt;/tr&gt;</br>
+&lt;tr&gt;</br>
+&lt;td class="text-left py-2 px-4 border">Row 2, Cell 1&lt;/td&gt;</br>
+&lt;td class="text-left py-2 px-4 border">Row 2, Cell 2&lt;/td&gt;</br>
+&lt;/tr>&gt;</br>
+&lt;/tbody></br>
+    &lt;/table&gt;
+  <h3 style="padding: 20px 0px 20px 0px" >Слова для вивчення</h3>
+<ul class="double-padding" style="list-style-type: none;margin: 0;padding: 0;">
+<li style="padding: 12px 16px;position: relative;">Tranquillity</li>
+<li style="padding: 12px 16px;position: relative;">Skyscraper</li>
+<li style="padding: 12px 16px;position: relative;">Miracle</li>
+<li style="padding: 12px 16px;position: relative;">Lullaby</li>
+</ul>
+<p style="font-size: 18px; text-decoration: underline;">З використанням css</p></br>
+<p>ul {</p>
+    <p>list-style-type: none;</p>
+    <p>margin: 0;</p>
+    <p>padding: 0;</p>
+    <p>}</p>
+  
+    <p>li {</p>
+        <p>padding: 12px 16px;</p>
+            <p>position: relative;</p>
+  }
+  <p style="font-size: 18px; text-decoration: underline;">З використанням tailwind(використовуємо в web-застосунку)</p>
+  &lt;ul class="list-none m-0 p-0"&gt;</br>
+  &lt;li class="relative py-3 px-4"&gt;</br>
+  &lt;/li&gt;</br>
+  &lt;/ul&gt;
+<p style="font-size: 24px;"><span class="text-bold">СSS Просунутий</span></p>
+<p style="border-radius: 25px;background: #73AD21;padding: 20px;width: 200px;height: 150px;">CSS3</p>
+<p>p{</p>
+    <p>border-radius: 25px;</p>
+    <p>background: #73AD21;</p>
+    <p>padding: 20px;</p> 
+    <p>width: 200px;</p>
+    <p>height: 150px;</p> 
+    <p>}</p>
+  
