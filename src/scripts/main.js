@@ -18,7 +18,7 @@ $(document).ready(() => {
         $(activeMainLink.id).removeClass("button_active")
         $(currentId).addClass("button_active")
         activeMainLink.id = currentId
-
+      console.log(`${currentUrl}/dist/components/${currentPage}/${nameOfFile}.html`)
         if (nameOfFile)
             $.get(
                 `${currentUrl}/dist/components/${currentPage}/${nameOfFile}.html`,
@@ -41,7 +41,7 @@ $(document).ready(() => {
 
     toggleActiveMainLink("#main-link-1")
 
-    for (let i = 1; i < 10; i++) {
+    for (let i = 1; i < 13; i++) {
         $(`#main-link-${i}`).click(function () {
             togglePopup(`#main-link-${i}`) ||
                 toggleActiveMainLink(`#main-link-${i}`)
