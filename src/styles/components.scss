@@ -5,10 +5,7 @@
     &__items {
         overflow: hidden;
         transition: all 0.5s ease;
-
-        &_hidden {
-            height: 0;
-        }
+        height: 0;
     }
 
     &__item {
