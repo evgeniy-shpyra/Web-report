@@ -1,4 +1,75 @@
-<p><span class="text-bold">Тема: </span>Каскадні таблиці стилів, селектори, ідентифікатори, стильове оформлення текстових елементів в html-документах.</p>
-<p><span class="text-bold">Мета: </span>Придбати практичні навички роботи з селекторами, ідентифікаторами,списками, різноманітними властивостями кольору і фону, зовнішними та внутрішними відступами, плаваючими елементами, оформленням текстових елементів</p>
-<p><span class="text-bold">Місце розташування web-застосунка:</span> <a href="https://drive.google.com/drive/folders/1Dx0EAdPx_3NrT7fUFJfn8NWIbv0CnO1C?usp=sharing">Google Диск</a></p>
-<p><span class="text-bold">Місце розташування звітного документа: <a href="https://drive.google.com/drive/folders/1Dx0EAdPx_3NrT7fUFJfn8NWIbv0CnO1C?usp=sharing">Google Диск</a></p>
+<div
+    style="
+        margin: 0 auto;
+        width: 900px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000;
+    "
+>
+    <header
+        style="
+            height: 80px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+            padding: 0 20px 0 20px;
+            border: 1px solid #000;
+        "
+    >
+        <div
+            style="
+                height: 60px;
+                width: 200px;
+                background-color: white;
+                border: 1px solid #000;
+            "
+        ></div>
+    </header>
+
+    <div style="flex: 1 0 500px; display: flex">
+        <aside
+            style="
+                flex: 0 1 200px;
+                background-color: blue;
+                border: 1px solid #000;
+            "
+        ></aside>
+        <main
+            style="
+                flex: 1 1 100%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+            "
+        >
+            <div
+                style="
+                    background-color: brown;
+                    margin-bottom: 20px;
+                    height: 150px;
+                "
+            ></div>
+            <div style="flex: 1 1 100%; display: flex">
+                <div
+                    style="
+                        flex: 0 0 60%;
+                        border: 1px solid #000;
+                        margin-right: 20px;
+                    "
+                ></div>
+                <div
+                    style="
+                        flex: 1 1 100%;
+                        background-color: blue;
+                        border: 1px solid #000;
+                    "
+                ></div>
+            </div>
+        </main>
+    </div>
+    <footer
+        style="height: 100px; background-color: yellow; border: 1px solid #000"
+    ></footer>
+</div>
