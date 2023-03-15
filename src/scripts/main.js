@@ -1,17 +1,14 @@
 $(document).ready(() => {
-    
     const activeMainLink = {
         id: "",
     }
 
     const toggleActiveMainLink = (currentId) => {
-        
         if (activeMainLink.id == currentId) return
 
         const currentPathArray = window.location.href.split("/")
-        const currentUrl = `http://${currentPathArray.slice(2, 3)[0]}` 
+        const currentUrl = `http://${currentPathArray.slice(2, 3)[0]}`
 
-      
         const currentPage = currentPathArray[currentPathArray.length - 1].slice(
             0,
             -5
@@ -32,33 +29,23 @@ $(document).ready(() => {
             )
     }
 
+    const togglePopup = (currentId) => {
+        const elementsNear = $(currentId).siblings(".popup__items")
+        if (elementsNear.length) {
+            $(elementsNear[0]).hasClass("popup__items_hidden")
+                ? $(elementsNear[0]).removeClass("popup__items_hidden")
+                : $(elementsNear[0]).addClass("popup__items_hidden")
+            return true
+        } else return false
+    }
+
     toggleActiveMainLink("#main-link-1")
 
-    $("#main-link-1").click(function () {
-        toggleActiveMainLink("#main-link-1")
-    })
-    $("#main-link-2").click(function () {
-        toggleActiveMainLink("#main-link-2")
-    })
-    $("#main-link-3").click(function () {
-        toggleActiveMainLink("#main-link-3")
-    })
-    $("#main-link-4").click(function () {
-        toggleActiveMainLink("#main-link-4")
-    })
-    $("#main-link-5").click(function () {
-        toggleActiveMainLink("#main-link-5")
-    })
-    $("#main-link-6").click(function () {
-        toggleActiveMainLink("#main-link-6")
-    })
-    $("#main-link-7").click(function () {
-        toggleActiveMainLink("#main-link-7")
-    })
-    $("#main-link-8").click(function () {
-        toggleActiveMainLink("#main-link-8")
-    })
-    $("#main-link-9").click(function () {
-        toggleActiveMainLink("#main-link-9")
-    })
+    for (let i = 1; i < 10; i++) {
+        $(`#main-link-${i}`).click(function () {
+            togglePopup(`#main-link-${i}`) ||
+                toggleActiveMainLink(`#main-link-${i}`)
+        })
+    }
+
 })

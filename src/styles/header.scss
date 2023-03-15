@@ -1,0 +1,16 @@
+.header {
+    &__container {
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    &__text {
+        color: white;
+        text-align: center;
+    }
+}
