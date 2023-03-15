@@ -1,1 +1,20 @@
-LAB - 2
+<p>Для того, щоб застосувати стилі до HTML-документу, ми можемо обрати один з чотирьох способів, або ж комбінувати їх:</p>
+<p>● застосувати зовнішні стилі за допомогою елемента link;</p>
+<p>● додати CSS-блок за допомогою елемента style;</p>
+<p>● вказати стиль конкретному HTML-елементу за допомогою HTML-атрибуту style (т.з. inline-стилі);</p>
+<p>● використати @import.</p>
+<p><span class="text-bold">Зовнішні стилі</span></p>
+<p>Застосовуються за допомогою елемента link, який повинен розташовуватися всередині елемента head.</p>
+&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;
+<p><span class="text-bold">Таблиці стилів документу</span></p>
+<p>CSS-стилі та коментарі розташовуються між тегами, що відкривають і закривають елемент style.</p>
+&lt;style&gt; type="text/css">&lt;style&gt;
+<p><span class="text-bold">Inline-стилі</span></p>
+<p>Якщо необхідно задати стиль певному елементу на сторінці, не застосовуючи зовнішніх стилів і елемента style, можна скористатись атрибутом style цього елементу</p>
+&lt;p&gt; style="color: blue; font-weight: bold">...&lt;p&gt;
+<p><span class="text-bold">Правило @import</span></p>
+<p>Правило @import дозволяє імпортувати (завантажити) вміст CSS-файлу в поточну стильову таблицю.</p>
+&lt;style type="text/css"&gt;
+    <p>@import url(styles/reset.css);</p>
+    <p>@import url(styles/form.css);</p>
+ &lt;style&gt;
